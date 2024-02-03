@@ -6,8 +6,13 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CE68ABCA2B6E871200B2A288 /* DayNightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68ABC92B6E871200B2A288 /* DayNightManager.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CE68ABC22B6E86E500B2A288 /* DayNightShift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayNightShift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE68ABC92B6E871200B2A288 /* DayNightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNightManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +29,7 @@
 		CE68ABB92B6E86E500B2A288 = {
 			isa = PBXGroup;
 			children = (
+				CE68ABC92B6E871200B2A288 /* DayNightManager.swift */,
 				CE68ABC32B6E86E500B2A288 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +73,7 @@
 				TargetAttributes = {
 					CE68ABC12B6E86E500B2A288 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -103,6 +110,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE68ABCA2B6E871200B2A288 /* DayNightManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +235,7 @@
 		CE68ABC72B6E86E500B2A288 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -240,6 +249,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -247,6 +258,7 @@
 		CE68ABC82B6E86E500B2A288 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -260,6 +272,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
