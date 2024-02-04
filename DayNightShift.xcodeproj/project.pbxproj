@@ -8,11 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CE68ABCA2B6E871200B2A288 /* DayNightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68ABC92B6E871200B2A288 /* DayNightManager.swift */; };
+		E590B1B92B6FDB980001786B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E590B1B82B6FDB980001786B /* Info.plist */; };
+		E590B1C32B6FF0070001786B /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590B1C22B6FF0070001786B /* MenuManager.swift */; };
+		E590B1C52B6FF05C0001786B /* ToggleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590B1C42B6FF05C0001786B /* ToggleManager.swift */; };
+		E590B1C72B6FF0C10001786B /* DayNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590B1C62B6FF0C10001786B /* DayNight.swift */; };
+		E590B1CB2B6FF2190001786B /* NSObject+DayNight.m in Sources */ = {isa = PBXBuildFile; fileRef = E590B1CA2B6FF2190001786B /* NSObject+DayNight.m */; };
+		E590B1CF2B6FFA410001786B /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E590B1CE2B6FFA410001786B /* JRSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE68ABC22B6E86E500B2A288 /* DayNightShift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayNightShift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE68ABC92B6E871200B2A288 /* DayNightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNightManager.swift; sourceTree = "<group>"; };
+		E590B1B82B6FDB980001786B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E590B1C22B6FF0070001786B /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		E590B1C42B6FF05C0001786B /* ToggleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleManager.swift; sourceTree = "<group>"; };
+		E590B1C62B6FF0C10001786B /* DayNight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNight.swift; sourceTree = "<group>"; };
+		E590B1C92B6FF1C40001786B /* DayNight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DayNight-Bridging-Header.h"; sourceTree = "<group>"; };
+		E590B1CA2B6FF2190001786B /* NSObject+DayNight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DayNight.m"; sourceTree = "<group>"; };
+		E590B1CC2B6FF2240001786B /* NSObject+DayNight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DayNight.h"; sourceTree = "<group>"; };
+		E590B1CE2B6FFA410001786B /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		E590B1D02B6FFA490001786B /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +44,13 @@
 		CE68ABB92B6E86E500B2A288 = {
 			isa = PBXGroup;
 			children = (
-				CE68ABC92B6E871200B2A288 /* DayNightManager.swift */,
+				E590B1CA2B6FF2190001786B /* NSObject+DayNight.m */,
+				E590B1CC2B6FF2240001786B /* NSObject+DayNight.h */,
+				E590B1C92B6FF1C40001786B /* DayNight-Bridging-Header.h */,
+				E590B1C82B6FF1130001786B /* Managers */,
+				E590B1CD2B6FFA280001786B /* Swizzle */,
+				E590B1C62B6FF0C10001786B /* DayNight.swift */,
+				E590B1B82B6FDB980001786B /* Info.plist */,
 				CE68ABC32B6E86E500B2A288 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,6 +61,25 @@
 				CE68ABC22B6E86E500B2A288 /* DayNightShift.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E590B1C82B6FF1130001786B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E590B1C42B6FF05C0001786B /* ToggleManager.swift */,
+				CE68ABC92B6E871200B2A288 /* DayNightManager.swift */,
+				E590B1C22B6FF0070001786B /* MenuManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E590B1CD2B6FFA280001786B /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				E590B1CE2B6FFA410001786B /* JRSwizzle.m */,
+				E590B1D02B6FFA490001786B /* JRSwizzle.h */,
+			);
+			path = Swizzle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E590B1B92B6FDB980001786B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E590B1C32B6FF0070001786B /* MenuManager.swift in Sources */,
+				E590B1C72B6FF0C10001786B /* DayNight.swift in Sources */,
+				E590B1CB2B6FF2190001786B /* NSObject+DayNight.m in Sources */,
 				CE68ABCA2B6E871200B2A288 /* DayNightManager.swift in Sources */,
+				E590B1CF2B6FFA410001786B /* JRSwizzle.m in Sources */,
+				E590B1C52B6FF05C0001786B /* ToggleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +287,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5PVHGUKPAW;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DayNightShift-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -249,6 +298,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
@@ -264,6 +314,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5PVHGUKPAW;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DayNightShift-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -272,6 +325,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
