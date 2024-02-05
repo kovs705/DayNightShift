@@ -8,21 +8,23 @@
 #import "NSObject+DayNight.h"
 #import <AppKit/AppKit.h>
 #import "DayNight-Bridging-Header.h"
+#import <DayNightShift-Swift.h>
 
-@implementation NSObject (Xmas)
+@implementation NSObject (DayNight)
 
 - (id)xmas_initWithIcon:(id)icon
                 message:(NSString *)message
            parentWindow:(id)parentWindow
                duration:(double)duration {
     if (icon && [ToggleManager isEnabled] && [message containsString:@"Succeeded"]) {
-        NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.fantageek.Xmas"];
+        NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.CodingKovs.DayNightShift"];
 
-        Gift *gift = [GiftManager makeGift];
+//        Gift *gift = [GiftManager makeGift];
 
-        NSImage *image = [bundle imageForResource:gift.imageName];
+//        NSImage *image = [bundle imageForResource:gift.imageName];
+//        NSInteger * time =
         
-        [self xmas_initWithIcon:image message:gift.message parentWindow:parentWindow duration:duration];
+//        [self xmas_initWithIcon:icon message:gift.message parentWindow:parentWindow duration:duration];
 
         if ([self isKindOfClass:[NSPanel class]]) {
             NSPanel *panel = (id)self;
@@ -33,7 +35,7 @@
                 e.material = NSVisualEffectMaterialTitlebar;
 
                 // Set back to original
-                image.template = NO;
+//                image.template = NO;
             }
         }
 

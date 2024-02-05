@@ -9,7 +9,7 @@
 
 @interface NSObject (DayNight)
 
-- (id)xmas_initWithTime:(id)time
+- (id)xmas_initWithIcon:(id)icon
                 message:(id)message
            parentWindow:(id)parentWindow
                duration:(double)duration;

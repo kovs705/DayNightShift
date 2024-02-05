@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CE68ABCA2B6E871200B2A288 /* DayNightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68ABC92B6E871200B2A288 /* DayNightManager.swift */; };
+		CEAE784C2B70B22200606529 /* ToggleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE784B2B70B22200606529 /* ToggleManager.swift */; };
+		CEAE784E2B70B4F800606529 /* GiftManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE784D2B70B4F800606529 /* GiftManager.swift */; };
 		E590B1B92B6FDB980001786B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E590B1B82B6FDB980001786B /* Info.plist */; };
 		E590B1C32B6FF0070001786B /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590B1C22B6FF0070001786B /* MenuManager.swift */; };
-		E590B1C52B6FF05C0001786B /* ToggleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590B1C42B6FF05C0001786B /* ToggleManager.swift */; };
 		E590B1C72B6FF0C10001786B /* DayNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590B1C62B6FF0C10001786B /* DayNight.swift */; };
 		E590B1CB2B6FF2190001786B /* NSObject+DayNight.m in Sources */ = {isa = PBXBuildFile; fileRef = E590B1CA2B6FF2190001786B /* NSObject+DayNight.m */; };
 		E590B1CF2B6FFA410001786B /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E590B1CE2B6FFA410001786B /* JRSwizzle.m */; };
@@ -19,11 +20,12 @@
 /* Begin PBXFileReference section */
 		CE68ABC22B6E86E500B2A288 /* DayNightShift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayNightShift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE68ABC92B6E871200B2A288 /* DayNightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNightManager.swift; sourceTree = "<group>"; };
+		CEAE784A2B70B15800606529 /* DayNight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DayNight-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEAE784B2B70B22200606529 /* ToggleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleManager.swift; sourceTree = "<group>"; };
+		CEAE784D2B70B4F800606529 /* GiftManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftManager.swift; sourceTree = "<group>"; };
 		E590B1B82B6FDB980001786B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E590B1C22B6FF0070001786B /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
-		E590B1C42B6FF05C0001786B /* ToggleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleManager.swift; sourceTree = "<group>"; };
 		E590B1C62B6FF0C10001786B /* DayNight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNight.swift; sourceTree = "<group>"; };
-		E590B1C92B6FF1C40001786B /* DayNight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DayNight-Bridging-Header.h"; sourceTree = "<group>"; };
 		E590B1CA2B6FF2190001786B /* NSObject+DayNight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DayNight.m"; sourceTree = "<group>"; };
 		E590B1CC2B6FF2240001786B /* NSObject+DayNight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DayNight.h"; sourceTree = "<group>"; };
 		E590B1CE2B6FFA410001786B /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
@@ -44,9 +46,9 @@
 		CE68ABB92B6E86E500B2A288 = {
 			isa = PBXGroup;
 			children = (
+				CEAE784A2B70B15800606529 /* DayNight-Bridging-Header.h */,
 				E590B1CA2B6FF2190001786B /* NSObject+DayNight.m */,
 				E590B1CC2B6FF2240001786B /* NSObject+DayNight.h */,
-				E590B1C92B6FF1C40001786B /* DayNight-Bridging-Header.h */,
 				E590B1C82B6FF1130001786B /* Managers */,
 				E590B1CD2B6FFA280001786B /* Swizzle */,
 				E590B1C62B6FF0C10001786B /* DayNight.swift */,
@@ -66,9 +68,10 @@
 		E590B1C82B6FF1130001786B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				E590B1C42B6FF05C0001786B /* ToggleManager.swift */,
 				CE68ABC92B6E871200B2A288 /* DayNightManager.swift */,
+				CEAE784B2B70B22200606529 /* ToggleManager.swift */,
 				E590B1C22B6FF0070001786B /* MenuManager.swift */,
+				CEAE784D2B70B4F800606529 /* GiftManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -155,8 +158,9 @@
 				E590B1C72B6FF0C10001786B /* DayNight.swift in Sources */,
 				E590B1CB2B6FF2190001786B /* NSObject+DayNight.m in Sources */,
 				CE68ABCA2B6E871200B2A288 /* DayNightManager.swift in Sources */,
+				CEAE784C2B70B22200606529 /* ToggleManager.swift in Sources */,
 				E590B1CF2B6FFA410001786B /* JRSwizzle.m in Sources */,
-				E590B1C52B6FF05C0001786B /* ToggleManager.swift in Sources */,
+				CEAE784E2B70B4F800606529 /* GiftManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -298,7 +303,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DayNight-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
@@ -309,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -325,7 +331,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DayNight-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
