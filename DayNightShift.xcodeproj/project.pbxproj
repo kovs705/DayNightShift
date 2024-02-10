@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2A7B352B77A76200510098 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A7B342B77A76200510098 /* Solar.swift */; };
 		CE68ABCA2B6E871200B2A288 /* DayNightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68ABC92B6E871200B2A288 /* DayNightManager.swift */; };
 		CEAE784C2B70B22200606529 /* ToggleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE784B2B70B22200606529 /* ToggleManager.swift */; };
 		CEAE784E2B70B4F800606529 /* GiftManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE784D2B70B4F800606529 /* GiftManager.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2A7B342B77A76200510098 /* Solar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
 		CE68ABC22B6E86E500B2A288 /* DayNightShift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayNightShift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE68ABC92B6E871200B2A288 /* DayNightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNightManager.swift; sourceTree = "<group>"; };
 		CEAE784A2B70B15800606529 /* DayNight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DayNight-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 				E590B1C82B6FF1130001786B /* Managers */,
 				E590B1CD2B6FFA280001786B /* Swizzle */,
 				E590B1C62B6FF0C10001786B /* DayNight.swift */,
+				CE2A7B342B77A76200510098 /* Solar.swift */,
 				E590B1B82B6FDB980001786B /* Info.plist */,
 				CE68ABC32B6E86E500B2A288 /* Products */,
 			);
@@ -101,6 +104,8 @@
 			dependencies = (
 			);
 			name = DayNightShift;
+			packageProductDependencies = (
+			);
 			productName = DayNightShift;
 			productReference = CE68ABC22B6E86E500B2A288 /* DayNightShift.bundle */;
 			productType = "com.apple.product-type.bundle";
@@ -129,6 +134,8 @@
 				Base,
 			);
 			mainGroup = CE68ABB92B6E86E500B2A288;
+			packageReferences = (
+			);
 			productRefGroup = CE68ABC32B6E86E500B2A288 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,6 +168,7 @@
 				CEAE784C2B70B22200606529 /* ToggleManager.swift in Sources */,
 				E590B1CF2B6FFA410001786B /* JRSwizzle.m in Sources */,
 				CEAE784E2B70B4F800606529 /* GiftManager.swift in Sources */,
+				CE2A7B352B77A76200510098 /* Solar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

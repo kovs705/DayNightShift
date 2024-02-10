@@ -6,6 +6,8 @@
 //
 
 import AppKit
+import Solar
+import CoreLocation
 
 var sharedPlugin: DayNight?
 
@@ -15,6 +17,7 @@ class DayNight: NSObject {
     lazy var center = NotificationCenter.default
     
     let menuHandler = MenuHandler()
+    let someDate = Date()
     
     init(bundle: Bundle) {
         self.bundle = bundle
